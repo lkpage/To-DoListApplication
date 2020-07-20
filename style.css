@@ -1,0 +1,145 @@
+#mainContainer {
+    max-width: 550px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgb(178, 240, 175);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    */
+}
+
+#appContainer {
+    width: 65%;
+    min-height: 530px;
+    max-height: 700px;
+    background-color: rgb(255, 253, 253);
+    position: relative;
+    display: table;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+span {
+    font-size: 16px;
+}
+
+#noTasksMessage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 0px;
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid thin rgb(168, 159, 159);
+    margin-top: 0px;
+}
+
+/* POZOR: pokud má více ikon stejnou předponu, volá se přes název bez předpony!! */
+
+.fa-square {
+    /* black empty */
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    color: rgb(155, 146, 146);
+    font-size: 15px;
+    /*POZOR: velikost ikony není 'size', ale 'font-size'! */
+}
+
+.fa-check-square {
+    /* green ok */
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    color: rgb(112, 230, 105);
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: rgb(65, 59, 59);
+}
+
+.task {
+    padding-left: 22px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    padding-top: 2px;
+}
+
+.fa-trash-alt {
+    /* pink trash */
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    font-size: 14px;
+    color: rgb(240, 155, 155);
+}
+
+.addTaskContainer {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 23px;
+    width: 100%;
+}
+
+#inputAddTask {
+    width: 80%;
+    margin-right: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+button {
+    min-width: 40px;
+    color: rgb(36, 33, 33);
+    background-color: rgb(178, 240, 175);
+    border-radius: 3px;
+    border: 1px none rgb(56, 51, 51);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
